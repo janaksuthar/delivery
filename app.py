@@ -3,7 +3,7 @@ import pandas as pd
 import pickle
 
 # Load the trained model
-filename = 'knn_model.sav'
+filename = 'https://github.com/janaksuthar/delivery/blob/main/knn_model.sav'
 loaded_model = pickle.load(open(filename, 'rb'))
 
 # Define the prediction function
