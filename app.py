@@ -44,6 +44,10 @@ input_data = pd.DataFrame([[Delivery_Distance, Traffic_Congestion, Weather_Condi
                             Warehouse_Processing_Time]], columns=columns)
 
 # Make a prediction
+# Make a prediction
 if st.button("Predict Delivery Delay"):
     prediction = predict_delivery_delay(input_data)
-    st.write("Predicted Delivery Delay:", prediction[0])
+    if prediction[0] == 0:
+        st.write("Predicted Delivery Delay: 0 (No significant delay expected)")
+    else:
+        st.write("Predicted Delivery Delay: 1 (Delay expected)")
