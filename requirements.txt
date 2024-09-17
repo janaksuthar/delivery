@@ -1,1 +1,7 @@
-pip install sklearn
+# prompt: make full req text file with minor details 
+
+%%writefile requirements.txt
+pandas
+scikit-learn
+streamlit
+pickle
