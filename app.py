@@ -5,7 +5,7 @@ import pickle
 # Load the trained model
 filename = r'knn_model.sav'
 loaded_model = pickle.load(open(filename, 'rb'))
-X_train.columns=[['Delivery_Distance', 'Traffic_Congestion', 'Weather_Condition',
+columns=[['Delivery_Distance', 'Traffic_Congestion', 'Weather_Condition',
        'Delivery_Slot', 'Driver_Experience', 'Num_Stops', 'Vehicle_Age',
        'Road_Condition_Score', 'Package_Weight', 'Fuel_Efficiency',
        'Warehouse_Processing_Time']]
@@ -48,7 +48,7 @@ input_data = pd.DataFrame({
     'Vehicle_Age': [Vehicle_Age],
     'Warehouse_Processing_Time': [Warehouse_Processing_Time],
     'Weather_Condition': [Weather_Condition]
-}, columns=X_train.columns)
+}, columns=columns)
 
 # Make a prediction
 if st.button("Predict Delivery Delay"):
