@@ -44,7 +44,7 @@ input_data = pd.DataFrame({
     'Vehicle_Age': [Vehicle_Age],
     'Warehouse_Processing_Time': [Warehouse_Processing_Time],
     'Weather_Condition': [Weather_Condition]
-})
+}, columns=X_train.columns)
 
 # Make a prediction
 if st.button("Predict Delivery Delay"):
