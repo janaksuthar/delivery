@@ -5,6 +5,10 @@ import pickle
 # Load the trained model
 filename = r'knn_model.sav'
 loaded_model = pickle.load(open(filename, 'rb'))
+X_train.columns=[['Delivery_Distance', 'Traffic_Congestion', 'Weather_Condition',
+       'Delivery_Slot', 'Driver_Experience', 'Num_Stops', 'Vehicle_Age',
+       'Road_Condition_Score', 'Package_Weight', 'Fuel_Efficiency',
+       'Warehouse_Processing_Time']]
 
 # Define the prediction function
 def predict_delivery_delay(features):
