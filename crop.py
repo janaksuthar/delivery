@@ -3,7 +3,7 @@ import pickle
 import pandas as pd
 
 # Load the trained model
-filename = r"C:\Users\Janak\Downloads\crop_recommendation_model.sav"
+filename = r"crop_recommendation_model.sav"
 loaded_model = pickle.load(open(filename, 'rb'))
 
 # Create a title for the app
