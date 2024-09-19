@@ -1,6 +1,9 @@
 import streamlit as st
 import pandas as pd
 import pickle
+from sklearn.impute import SimpleImputer
+from sklearn.utils.validation import check_is_fitted
+from sklearn.ensemble import RandomForestClassifier
 
 # Load the trained model
 model = pickle.load(open('rf_model.pkl', 'rb'))
