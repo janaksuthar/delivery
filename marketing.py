@@ -3,7 +3,7 @@ import pandas as pd
 import pickle
 
 # Load the trained model
-model = pickle.load(open('/content/rf_model.pkl', 'rb'))
+model = pickle.load(open('rf_model.pkl', 'rb'))
 
 # Define the features
 features = ['Age', 'Annual Income', 'Spending Score', 'Previous Purchases',
